@@ -1,8 +1,10 @@
-const inquirer = require("inquirer")
+const inquirer = require("inquirer");
+const generateReadMe = require("./generateReadMe")
+
 
 function promptResponse() {
-    return inquirer.prompt([{
-        type: "input",
+    return inquirer.prompt([
+    {   type: "input",
         message: "Enter your project's title...",
         name: "title"
     },
