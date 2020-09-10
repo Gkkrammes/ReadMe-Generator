@@ -1,35 +1,39 @@
 function generateReadMe(data) {
-    return
-    # ${data.title}
-
+    const badge = "https://img.shields.io/badge/Github-${data.username}-4cbbb9";
+    const gitHub = "https://github.com/${data.username}.png?size=50";
     
-    ## Table of Contents
-        - [Installation]
-        - [Usage]
-        - [License]
-        - [Contributing]
-        - [Tests]
+    
+    return '
+        # ${data.title}
 
-    ## Description
-        ${data.description}
+        ## Table of Contents
+            - [Installation]
+            - [Usage]
+            - [License]
+            - [Contributing]
+            - [Tests]
 
-    ## Installation
-        Installation instructions for this project are: ${data.installation}
+        ## Description
+            ${data.description}
 
-    ## Usage
-        This program is to be used: ${data.usage}
+        ## Installation
+            Installation instructions for this project are: ${data.installation}
 
-    ## License
-        The license selected: ${data.license}
+        ## Usage
+            This program is to be used: ${data.usage}
 
-    ## Contributing
-        The contributors to this project include: ${data.contributing}
+        ## License
+            The license selected: ${data.license}
 
-    ## Tests
-        The test commands included in the project are: ${data.tests}
+        ## Contributing
+            The contributors to this project include: ${data.contributing}
 
-    ## Contact
+        ## Tests
+            The test commands included in the project are: ${data.tests}
 
+        ## Contact
+            \n![Badge] (${badge})
+            \n![Profile Image] (${gitHub})
+            \nFor questions, contact author at ${data.email}.'
 }
-
 module.exports = generateReadMe;
