@@ -17,7 +17,7 @@ function promptResponse() {
         name: "installation"
     },
     {   type: "input",
-        message: "Please include a desctiption of how this can be used...",
+        message: "Please include a description of how this can be used...",
         name: "usage"
     },
     {   type: "list",
@@ -47,6 +47,11 @@ function promptResponse() {
         message: "Enter your email...",
         name: "email"
     },
+    {   type: "input",
+        message: "Enter the full link to your repository...",
+        name: "repository"
+    },
+
    
 ]);
 };
@@ -58,6 +63,7 @@ function generateReadMe(data) {
     
     return `
   # ${data.title} 
+  # ${data.repository}
   
   ## Table of Contents
   - [Description](#desctiption)
@@ -98,7 +104,7 @@ function printtoReadMe(fileName, data) {
         if (err) {
             throw err;
         }
-        console.log("success");
+        console.log("You have created a ReadMe file for your project titled" + data.title + ".");
     });
 };
 
