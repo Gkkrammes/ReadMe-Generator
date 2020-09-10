@@ -45,3 +45,12 @@ function promptResponse() {
 
 ]);
 };
+
+function printtoReadMe(fileName, data) {
+    fs.writeFile(fileName, data, "utf8", function(err) {
+        if (err) {
+            throw err;
+        }
+        console.log("success");
+    });
+};
