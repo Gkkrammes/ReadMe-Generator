@@ -66,7 +66,7 @@ function generateReadMe(data) {
   # ${data.repository}
   
   ## Table of Contents
-  - [Description](#desctiption)
+  - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)

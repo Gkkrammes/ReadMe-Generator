@@ -1,6 +1,6 @@
 
-  # Title of Project 
-  # NA
+  # Title 
+  # https://github.com/Gkkrammes/ReadMe-Generator
   
   ## Table of Contents
   - [Description](#desctiption)
@@ -11,19 +11,19 @@
   - [Tests](#tests)
 
   ## Description
-    Description of Project
+    Desc
 
   ## Installation
-  Installation instructions for this project are: Packages to install
+  Installation instructions for this project are: Install
   
   ## Usage
-  This program is to be used: How to Use
+  This program is to be used: Use
 
   ## License
-  The license selected: NONE
+  The license selected: Apache License 2.0 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Contributing
-  The contributors to this project include: Myself
+  The contributors to this project include: me
 
   ## Tests
   The test commands included in the project are: None
